@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 *{
   box-sizing: border-box;
   margin: 0;
@@ -56,6 +57,7 @@ img{
   box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
 }
 .name-utility{
+  font-family: 'Silkscreen', monospace;
   font-size: 1.5rem;
   color: rgb(50, 50, 50);
   margin-bottom: .25rem;
