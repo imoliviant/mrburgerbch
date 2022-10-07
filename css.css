@@ -53,3 +53,17 @@ img{
   padding: 2.5rem;
   box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
 }
+.name-utility{
+  font-size: 1.5rem;
+  color: rgb(50, 50, 50);
+  margin-bottom: .25rem;
+}
+.case-utility{
+  color: green;
+  font-style: italic;
+}
+.desc-utility{
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  color: lightgreen;
+}
