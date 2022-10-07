@@ -67,3 +67,8 @@ img{
   letter-spacing: 1px;
   color: lightgreen;
 }
+@media (max-width: 678px){
+  .utility{
+    margin-top: 1.5rem;
+  }
+}
