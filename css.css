@@ -67,6 +67,12 @@ img{
   letter-spacing: 1px;
   color: lightgreen;
 }
+#misty{
+  height:22px;
+  width:22px;
+  background: linear-gradient(0deg, aqua, green);
+}
+
 @media (max-width: 678px){
   .utility{
     margin-top: 1.5rem;
