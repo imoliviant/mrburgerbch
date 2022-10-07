@@ -24,6 +24,7 @@ body{
   margin-bottom: .5rem;
 }
 .note{
+  font-family: 'Silkscreen', monospace;
   font-size: 1.1rem;
   color: rgb(150, 150, 150);
   font-style: italic;
