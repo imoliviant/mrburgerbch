@@ -76,6 +76,7 @@ img{
   border-radius: 12px;
   font-family: 'IBM Plex Mono', monospace;
   font-family: 1.56rem;
+  cursor: pointer;
 }
 
 @media (max-width: 678px){
