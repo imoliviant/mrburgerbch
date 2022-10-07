@@ -68,8 +68,8 @@ img{
   color: lightgreen;
 }
 #misty{
-  height:22px;
-  width:22px;
+  height:45px;
+  width:100%;
   background: linear-gradient(0deg, aqua, green);
 }
 
