@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap');
 *{
   box-sizing: border-box;
   margin: 0;
@@ -72,6 +73,7 @@ img{
   width:100%;
   background: linear-gradient(0deg, aqua, green);
   border-radius: 12px;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 @media (max-width: 678px){
