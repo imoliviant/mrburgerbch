@@ -69,3 +69,11 @@ function stakedToken() {
              $("#burger5").html(content);
          });;
 };
+function walletBalance() {
+    var event = contractBurger.methods.balanceOf(burgerCook).call()
+        .then(function (result) {
+    var content = "Your Burger balance on wallet is: ";
+    content += JSON.stringify(result.toString() / 1000000000000000000);
+    $("#burger6").html(content);
+        });;
+};
