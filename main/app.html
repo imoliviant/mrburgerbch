@@ -29,6 +29,26 @@
       </ul>
     </div>
     
+    <div class="box">
+      <img src="../imgs/logo.png" alt="burger-single-stake" class="box-img">
+      <h1>
+        Mr<spam>Burger</spam> Single Token Pool
+      </h1>
+      <h5>
+        <spam>STLP</spam>
+      </h5>
+      <p>
+        Add your Burgers in Single Token Liquidity Pool, generate passive income...<br><br>
+        <input id="amount1" type="number" size="10" placeholder="amount">
+        <button onclick="approve()">Approve Burgers</button>
+        <button onclick="stakeTokens()">Stake Burgers</button><br>
+        maximum 5,000 burgers
+      <div id="burger1">
+        <p></p>
+      </div>
+      </p>
+    </div>
+    
     <script>
       web3 = new Web3(window.ethereum);
       ethereum.request({ method: 'eth_requestAccounts' });
