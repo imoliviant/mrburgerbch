@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 body{
   background: linear-gradient(30deg, green, aqua);
   background-size: cover;
@@ -11,5 +13,16 @@ body{
   margin: auto;
   margin-top: 5%;
   color: white;
-  font-family: monospace;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.box img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  font-family: 'Ubuntu Mono', monospace;
+  letter-spacing: 4px;
+  font-weight: 100;
 }
