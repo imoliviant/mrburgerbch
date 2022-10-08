@@ -78,12 +78,20 @@ img{
   font-family: 'Ubuntu Mono', monospace;
 }
 #misty{
-  height:45px;
+  height:40px;
   width:100%;
   background: linear-gradient(0deg, aqua, green);
   border-radius: 12px;
   font-family: 'IBM Plex Mono', monospace;
   font-family: 1.56rem;
+  cursor: pointer;
+}
+#pagey{
+  height:40px;
+  width:100%;
+  background: linear-gradient(0deg, aqua, green);
+  border-radius: 12px;
+  font-family: 'IBM Plex Mono', monospace;
   cursor: pointer;
 }
 
