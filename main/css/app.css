@@ -64,5 +64,6 @@ a{
 button{
   background: linear-gradient(45deg, green, aqua);
   font-family: 'Silkscreen', monospace;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
 }
