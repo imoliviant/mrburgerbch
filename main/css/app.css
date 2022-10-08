@@ -36,6 +36,7 @@ body{
 .box p{
   text-align: justify;
   font-shadow: black;
+  font-color: #7FFF00;
 }
 ul{
   margin: 0;
