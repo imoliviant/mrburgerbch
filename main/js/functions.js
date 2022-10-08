@@ -1,12 +1,12 @@
 // Stake
 function approve() {
     var amount1 = $("#amount1").val();
-    var amount2 = amount1 *100000000;
+    var amount2 = amount1 *1000000000000000000;
     var amount3 = amount2.toString();
     var content = "Approving transaction from: ";
     content += burgerCook;
     $("").html(content);
-    var event = contractBurgerStake.methods.approve("0x2efDE281498838C5405b4284d87aC319117e9B3C", amount3).send({ from: burgerCook })
+    var event = contractBurger.methods.approve("staking-ca", amount3).send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Approved!: ";
