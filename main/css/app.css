@@ -35,6 +35,7 @@ body{
 }
 .box p{
   text-align: justify;
+  font-shadow: black;
 }
 ul{
   margin: 0;
