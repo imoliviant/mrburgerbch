@@ -36,7 +36,7 @@ function stakingBalance() {
         .then(function (result) {
     var content = "Your Burger balance staked is: ";
     content += JSON.stringify(result.toString() / 1000000000000000000);
-    $("").html(content);
+    $("#burger2").html(content);
         });;
 };
 
@@ -45,14 +45,14 @@ function calculateReward() {
         .then(function (result) {
     var content = "Your current Burger reward is: ";
     content += JSON.stringify(result.toString() / 1000000000000000000);
-    $("").html(content);
+    $("#burger3").html(content);
         });;
 };
     
 function unstakeTokens() {
     var content = "Sending transaction from: ";
     content += burgerCook;
-    $("#lang10").html(content);
+    $("#burger4").html(content);
     var event = contractBurgerStake.methods.unstakeTokens().send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
