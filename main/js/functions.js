@@ -58,6 +58,6 @@ function unstakeTokens() {
             console.log(receipt);
     var content = "Transaction sent! ";
     content += JSON.stringify(receipt.transactionHash);
-    $("").html(content);
+    $("#burger4").html(content);
         });;
 };
