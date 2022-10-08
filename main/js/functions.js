@@ -17,7 +17,7 @@ function approve() {
 
 function stakeTokens() {
     var amount1 = $("#amount1").val();
-    var amount2 = amount1 *100000000;
+    var amount2 = amount1;
     var amount3 = amount2.toString();
     var content = "Sending transaction from: ";
     content += burgerCook;
