@@ -5,13 +5,13 @@ function approve() {
     var amount3 = amount2.toString();
     var content = "Approving transaction from: ";
     content += burgerCook;
-    $("").html(content);
+    $("#burger1").html(content);
     var event = contractBurger.methods.approve("staking-ca", amount3).send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Approved!: ";
     content += JSON.stringify(receipt.transactionHash);
-    $("").html(content);
+    $("#burger1").html(content);
         });;
 };
 
@@ -21,13 +21,13 @@ function stakeTokens() {
     var amount3 = amount2.toString();
     var content = "Sending transaction from: ";
     content += burgerCook;
-    $("").html(content);
+    $("#burger1").html(content);
     var event = contractBurgerStake.methods.stakeTokens(amount3).send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Transaction sent! Staked!: ";
     content += JSON.stringify(receipt.transactionHash);
-    $("").html(content);
+    $("#burger1").html(content);
         });;
 };
     
