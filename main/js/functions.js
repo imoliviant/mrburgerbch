@@ -61,3 +61,11 @@ function unstakeTokens() {
     $("#burger4").html(content);
         });;
 };
+function stakedToken() {
+    var event = contractBurger.methods.balanceOf("0xfb31e9ED82233c23c3839CDA2a6D5c03fd81314A").call()
+         .then(function(result) {
+             var content = "Burgers on Contract: ";
+             content += JSON.stringify(result.toString());
+             $("#burger5").html(content);
+         });;
+};
