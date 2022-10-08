@@ -6,7 +6,7 @@ function approve() {
     var content = "Approving transaction from: ";
     content += burgerCook;
     $("#burger1").html(content);
-    var event = contractBurger.methods.approve("staking-ca", amount3).send({ from: burgerCook })
+    var event = contractBurger.methods.approve("0xfb31e9ED82233c23c3839CDA2a6D5c03fd81314A", amount3).send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Approved!: ";
