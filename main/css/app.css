@@ -36,7 +36,6 @@ body{
 .box p{
   text-align: justify;
   text-shadow: black;
-  color: #7FFF00;
 }
 ul{
   margin: 0;
@@ -58,12 +57,6 @@ ul{
 }
 spam{
   color: yellowgreen;
-}
-spam2{
-  color: green;
-}
-spam3{
-  color: red;
 }
 a{
   color: white;
