@@ -376,4 +376,4 @@ var contractXBurger = new web3.eth.Contract(
 		"stateMutability": "view",
 		"type": "function"
 	}
-], "0x09E9D2f840035932Ae34C91A18e53C49B201D4aC");
+], "0xa3e2b596cA16C0ccC40690263307DB37cCf770eC");
