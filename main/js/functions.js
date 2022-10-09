@@ -74,7 +74,7 @@ function stakedToken() {
          .then(function(result) {
              var content = "XBurgers left to distribute: ";
              content += JSON.stringify(result.toString() / 100000000);
-             $("#burger5").html(content);
+             $("#burger7").html(content);
          });;
 };
 function walletBalance() {
