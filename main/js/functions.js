@@ -69,6 +69,14 @@ function stakedToken() {
              $("#burger5").html(content);
          });;
 };
+function stakedToken() {
+    var event = contractXBurger.methods.balanceOf("0xfb31e9ED82233c23c3839CDA2a6D5c03fd81314A").call()
+         .then(function(result) {
+             var content = "XBurgers left to distribute: ";
+             content += JSON.stringify(result.toString() / 100000000);
+             $("#burger5").html(content);
+         });;
+};
 function walletBalance() {
     var event = contractBurger.methods.balanceOf(burgerCook).call()
         .then(function (result) {
