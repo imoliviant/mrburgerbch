@@ -69,7 +69,7 @@ function stakedToken() {
              $("#burger5").html(content);
          });;
 };
-function stakedToken() {
+function xBurgersCA() {
     var event = contractXBurger.methods.balanceOf("0xfb31e9ED82233c23c3839CDA2a6D5c03fd81314A").call()
          .then(function(result) {
              var content = "XBurgers left to distribute: ";
