@@ -44,7 +44,7 @@ function calculateReward() {
     var event = contractBurgerStake.methods.calculateReward().call({ from: burgerCook })
         .then(function (result) {
     var content = "Your current xBurger reward is: ";
-    content += JSON.stringify(result.toString() / 100000000);
+    content += JSON.stringify(result.toString() / 1000000000000000000);
     $("#burger3").html(content);
         });;
 };
