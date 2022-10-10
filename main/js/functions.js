@@ -141,7 +141,7 @@ function calculateRewardMLP() {
 };
 
 // unstake your staked MLP & receive your income.
-function unstakeTokens() {
+function unstakeTokensMLP() {
     var content = "Sending transaction from: ";
     content += burgerCook;
     $("#burger11").html(content);
