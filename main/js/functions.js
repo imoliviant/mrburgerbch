@@ -93,7 +93,7 @@ function approveMLP() {
     var amount3 = amount2.toString();
     var content = "Approving transaction from: ";
     content += burgerCook;
-    $("#burger1").html(content);
+    $("#burger8").html(content);
     var event = contractBurger.methods.approve("staking-ca", amount3).send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
@@ -110,7 +110,7 @@ function stakeMLP() {
     var amount3 = amount2.toString();
     var content = "Sending transaction from: ";
     content += burgerCook;
-    $("#burger1").html(content);
+    $("#burger8").html(content);
     var event = contractMLPStake.methods.stakeTokens(amount3).send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
