@@ -153,3 +153,11 @@ function unstakeTokensMLP() {
     $("#burger11").html(content);
         });;
 };
+function walletBalanceMLP() {
+    var event = contractMistLP.methods.balanceOf(burgerCook).call()
+        .then(function (result) {
+    var content = "Your MLP balance on wallet is: ";
+    content += JSON.stringify(result.toString() / 1000000000000000000);
+    $("#burger6").html(content);
+        });;
+};
