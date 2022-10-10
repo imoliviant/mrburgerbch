@@ -86,15 +86,7 @@ function walletBalance() {
         });;
 };
 
-function max() {
-    var event = contractBurger.methods.balanceOf(burgerCook).call()
-        .then(function (result) {
-            var content = JSON.stringify(result.toString());
-            $("#amount1").html(content);
-        });;
-};
-
-// Stake MLP
+// approve MLP
 function approveMLP() {
     var amount1 = $("#amount1").val();
     var amount2 = amount1;
@@ -108,5 +100,56 @@ function approveMLP() {
     var content = "Approved!: ";
     content += JSON.stringify(receipt.transactionHash);
     $("#burger8").html(content);
+        });;
+};
+
+// stake MLP
+function stakeMLP() {
+    var amount1 = $("#amount1").val();
+    var amount2 = amount1;
+    var amount3 = amount2.toString();
+    var content = "Sending transaction from: ";
+    content += burgerCook;
+    $("#burger1").html(content);
+    var event = contractMLPStake.methods.stakeTokens(amount3).send({ from: burgerCook })
+        .then(function (receipt) {
+            console.log(receipt);
+    var content = "Transaction sent! Staked!: ";
+    content += JSON.stringify(receipt.transactionHash);
+    $("#burger8").html(content);
+        });;
+};
+
+// mlp staking balance
+function stakingBalanceMLP() {
+    var event = contractMLPStake.methods.stakingBalance(burgerCook).call()
+        .then(function (result) {
+    var content = "Your MLP balance staked is: ";
+    content += JSON.stringify(result.toString() / 1000000000000000000);
+    $("#burger9").html(content);
+        });;
+};
+
+// rewards for staking MLP
+function calculateReward() {
+    var event = contractMLPStake.methods.calculateReward().call({ from: burgerCook })
+        .then(function (result) {
+    var content = "Your current SPICE reward is: ";
+    content += JSON.stringify(result.toString() / 1000000000000000000);
+    $("#burger10").html(content);
+        });;
+};
+
+// unstake your staked MLP & receive your income.
+function unstakeTokens() {
+    var content = "Sending transaction from: ";
+    content += burgerCook;
+    $("#burger11").html(content);
+    var event = contractMLPStake.methods.unstakeTokens().send({ from: burgerCook })
+        .then(function (receipt) {
+            console.log(receipt);
+    var content = "Transaction sent! ";
+    content += JSON.stringify(receipt.transactionHash);
+    $("#burger11").html(content);
         });;
 };
