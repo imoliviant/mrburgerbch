@@ -158,6 +158,6 @@ function walletBalanceMLP() {
         .then(function (result) {
     var content = "Your MLP balance on wallet is: ";
     content += JSON.stringify(result.toString() / 1000000000000000000);
-    $("#burger6").html(content);
+    $("#burger12").html(content);
         });;
 };
