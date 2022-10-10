@@ -85,3 +85,28 @@ function walletBalance() {
     $("#burger6").html(content);
         });;
 };
+
+function max() {
+    var event = contractBurger.methods.balanceOf(burgerCook).call()
+        .then(function (result) {
+            var content = JSON.stringify(result.toString());
+            $("#amount1").html(content);
+        });;
+};
+
+// Stake MLP
+function approveMLP() {
+    var amount1 = $("#amount1").val();
+    var amount2 = amount1;
+    var amount3 = amount2.toString();
+    var content = "Approving transaction from: ";
+    content += burgerCook;
+    $("#burger1").html(content);
+    var event = contractBurger.methods.approve("staking-ca", amount3).send({ from: burgerCook })
+        .then(function (receipt) {
+            console.log(receipt);
+    var content = "Approved!: ";
+    content += JSON.stringify(receipt.transactionHash);
+    $("#burger8").html(content);
+        });;
+};
