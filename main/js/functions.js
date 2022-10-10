@@ -105,13 +105,13 @@ function approveMLP() {
 
 // stake MLP
 function stakeMLP() {
-    var amount1 = $("#amount1").val();
+    var amount1 = $("#amount4").val();
     var amount2 = amount1;
     var amount3 = amount2.toString();
     var content = "Sending transaction from: ";
     content += burgerCook;
     $("#burger8").html(content);
-    var event = contractMLPStake.methods.stakeTokens(amount3).send({ from: burgerCook, value: 1000000000 })
+    var event = contractMLPStake.methods.stakeTokens(amount3).send({ from: burgerCook, value: 500000000000000 })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Transaction sent! Staked!: ";
