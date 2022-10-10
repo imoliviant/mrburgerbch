@@ -286,4 +286,4 @@ var contractMLPStake = new web3.eth.Contract(
 		"stateMutability": "nonpayable",
 		"type": "function"
 	}
-], "");
+], "0x28059f921324Aa6C845176f7e05a29854D8d90B0");
