@@ -131,7 +131,7 @@ function stakingBalanceMLP() {
 };
 
 // rewards for staking MLP
-function calculateReward() {
+function calculateRewardMLP() {
     var event = contractMLPStake.methods.calculateReward().call({ from: burgerCook })
         .then(function (result) {
     var content = "Your current SPICE reward is: ";
