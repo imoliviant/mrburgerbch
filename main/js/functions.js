@@ -88,7 +88,7 @@ function walletBalance() {
 
 // approve MLP
 function approveMLP() {
-    var amount1 = $("#amount1").val();
+    var amount1 = $("#amount4").val();
     var amount2 = amount1;
     var amount3 = amount2.toString();
     var content = "Approving transaction from: ";
