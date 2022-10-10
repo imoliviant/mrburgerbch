@@ -1,4 +1,5 @@
-[
+var contractMLPStake = new web3.eth.Contract(
+	[
 	{
 		"inputs": [
 			{
@@ -285,4 +286,4 @@
 		"stateMutability": "nonpayable",
 		"type": "function"
 	}
-]
+], "");
