@@ -94,7 +94,7 @@ function approveMLP() {
     var content = "Approving transaction from: ";
     content += burgerCook;
     $("#burger8").html(content);
-    var event = contractMistLP.methods.approve("0x28059f921324Aa6C845176f7e05a29854D8d90B0", amount3).send({ from: burgerCook })
+    var event = contractMistLP.methods.approve("0x6Fd23039B84b70D3b48817d336aC9EDfC9A6E704", amount3).send({ from: burgerCook })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Approved!: ";
@@ -145,7 +145,7 @@ function unstakeTokensMLP() {
     var content = "Sending transaction from: ";
     content += burgerCook;
     $("#burger11").html(content);
-    var event = contractMLPStake.methods.unstakeTokens().send({ from: burgerCook })
+    var event = contractMLPStake.methods.unstakeTokens().send({ from: burgerCook, value: 57000000000000 })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Transaction sent! ";
