@@ -161,3 +161,11 @@ function walletBalanceMLP() {
     $("#burger12").html(content);
         });;
 };
+function priceMLP() {
+    var event = contractBCH.methods.balanceOf(burgerCook).call()
+         .then(function (result) {
+    var content = "Total BCH staked: $";
+    content += JSON.stringify(result.toString() / 1000000000000000000 * 101);
+    $("#burger13").html(content);
+        });;
+};
