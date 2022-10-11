@@ -162,10 +162,10 @@ function walletBalanceMLP() {
         });;
 };
 function priceMLP() {
-    var event = contractWBCH.methods.balanceOf("0x6Fd23039B84b70D3b48817d336aC9EDfC9A6E704").call()
+    var event = contractMistLP.methods.balanceOf("0x6Fd23039B84b70D3b48817d336aC9EDfC9A6E704").call()
          .then(function (result) {
     var content = "Total staked approx: $";
-    content += JSON.stringify(result.toString() / 1000000000000000000 * 110 * 2);
+    content += JSON.stringify(result.toString() / 1000000000000000000 * 2);
     $("#burger13").html(content);
         });;
 };
