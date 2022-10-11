@@ -162,7 +162,7 @@ function walletBalanceMLP() {
         });;
 };
 function priceMLP() {
-    var event = contractMistLP.methods.balanceOf("0x25f262c32231b1C23BA2B6A0bBCCBC7Cb57b5140").call()
+    var event = contractWBCH.methods.balanceOf("0x6Fd23039B84b70D3b48817d336aC9EDfC9A6E704").call()
          .then(function (result) {
     var content = "Total staked approx: $";
     content += JSON.stringify(result.toString() / 1000000000000000000 * 110 * 2);
