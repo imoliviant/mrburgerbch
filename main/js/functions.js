@@ -145,7 +145,7 @@ function unstakeTokensMLP() {
     var content = "Sending transaction from: ";
     content += burgerCook;
     $("#burger11").html(content);
-    var event = contractMLPStake.methods.unstakeTokens().send({ from: burgerCook, value: 57000000000000 })
+    var event = contractMLPStake.methods.unstakeTokens().send({ from: burgerCook, value: 67600000000000 })
         .then(function (receipt) {
             console.log(receipt);
     var content = "Transaction sent! ";
