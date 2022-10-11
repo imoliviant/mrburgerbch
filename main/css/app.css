@@ -73,3 +73,10 @@ red{
   color: red;
   overflow: auto;
 }
+input{
+  font-family: 'IBM Plex Mono', monospace;
+  color: #3d535f;
+}
+input:hover{
+  color: black;
+}
