@@ -16,6 +16,7 @@ body{
   margin-top: 5%;
   color: white;
   font-family: 'Silkscreen', monospace;
+  overflow: auto;
 }
 .box img{
   border-radius: 50%;
