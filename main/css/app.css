@@ -70,7 +70,6 @@ button{
   cursor: pointer;
 }
 red{
-  color: #7f00ff;
   overflow: auto;
   font-family: 'IBM Plex Mono', monospace;
 }
