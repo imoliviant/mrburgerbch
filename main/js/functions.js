@@ -162,7 +162,7 @@ function walletBalanceMLP() {
         });;
 };
 function priceMLP() {
-    var event = contractBCH.methods.balanceOf(burgerCook).call()
+    var event = contractWBCH.methods.balanceOf("0x25f262c32231b1C23BA2B6A0bBCCBC7Cb57b5140").call()
          .then(function (result) {
     var content = "Total BCH staked: $";
     content += JSON.stringify(result.toString() / 1000000000000000000 * 101);
