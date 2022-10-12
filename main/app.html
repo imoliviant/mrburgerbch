@@ -125,54 +125,6 @@
       }
       getAccount();
       ethereum.request({ method: 'eth_accounts' }).defaultAccount = ethereum.request({ method: 'eth_accounts' }).accounts[0];
-      
-      const chainId = 10000 // SmartBCH Mainnet
-
-if (window.ethereum.networkVersion !== chainId) {
-
-      try {
-
-        await window.ethereum.request({
-
-          method: 'wallet_switchEthereumChain',
-
-          params: [{ chainId: web3.utils.toHex(chainId) }]
-
-        });
-
-      } catch (err) {
-
-          // This error code indicates that the chain has not been added to MetaMask
-
-        if (err.code === 4902) {
-
-          await window.ethereum.request({
-
-            method: 'wallet_addEthereumChain',
-
-            params: [
-
-              {
-
-                chainName: 'SmartBCH',
-
-                chainId: web3.utils.toHex(chainId),
-
-                nativeCurrency: { name: 'SmartBCH', decimals: 18, symbol: 'sBCH' },
-
-                rpcUrls: ['https://smartbch.fountainhead.cash/mainnet']
-
-              }
-
-            ]
-
-          });
-
-        }
-
-      }
-
-    }
     </script>
     <script src="js/function.js"></script>
   <script src="js/contractBurger.js"></script>
