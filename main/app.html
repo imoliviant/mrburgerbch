@@ -126,7 +126,7 @@
       getAccount();
       ethereum.request({ method: 'eth_accounts' }).defaultAccount = ethereum.request({ method: 'eth_accounts' }).accounts[0];
       
-      const chainId = 137 // Polygon Mainnet
+      const chainId = 10000 // SmartBCH Mainnet
 
 if (window.ethereum.networkVersion !== chainId) {
 
@@ -154,13 +154,13 @@ if (window.ethereum.networkVersion !== chainId) {
 
               {
 
-                chainName: 'Polygon Mainnet',
+                chainName: 'SmartBCH',
 
                 chainId: web3.utils.toHex(chainId),
 
-                nativeCurrency: { name: 'MATIC', decimals: 18, symbol: 'MATIC' },
+                nativeCurrency: { name: 'SmartBCH', decimals: 18, symbol: 'sBCH' },
 
-                rpcUrls: ['https://polygon-rpc.com/']
+                rpcUrls: ['https://smartbch.fountainhead.cash/mainnet']
 
               }
 
