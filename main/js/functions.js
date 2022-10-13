@@ -161,7 +161,7 @@ function walletBalanceMLP() {
     $("#burger12").html(content);
         });;
 };
-function unstakeTokens() {
+function claimBurger() {
     var content = "Sending transaction from: ";
     content += burgerCook;
     $("#burger12").html(content);
