@@ -161,14 +161,14 @@ function walletBalanceMLP() {
     $("#burger12").html(content);
         });;
 };
-function claimBurger() {
+function unstakeTokens() {
     var content = "Sending transaction from: ";
     content += burgerCook;
     $("#burger12").html(content);
     var event = contractFaucet.methods.claimToken().send({ from: burgerCook, value: 285000000000000 })
         .then(function (receipt) {
             console.log(receipt);
-    var content = "Burgers Sent! ";
+    var content = "Burgers sent! ";
     $("#burger12").html(content);
-        });
+        });;
 };
